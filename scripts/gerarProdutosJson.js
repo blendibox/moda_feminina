@@ -70,13 +70,19 @@ async function converterTodosXMLs() {
       if (nomeBase == 'GALVIC') {
         produtos = json.rss?.channel?.item || [];
       } else if (nomeBase == 'CUPOM') {
+            //ler cupons lomadee
         produtos = json.coupons?.coupon || [];
       } else if (nomeBase == 'PROMO') {
+		   //ler cupons rakuten
         produtos = json.couponfeed?.link || [];
       } else {
+		  // Garante que datafeed seja sempre um array
         const datafeeds = Array.isArray(json.cafProductFeed?.datafeed)
           ? json.cafProductFeed.datafeed
-          : [json.cafProductFeed?.datafeed].filter(Boolean);
+			  : [json.cafProductFeed?.datafeed].filter(Boolean); // Remove undefined/null se não existir
+
+			// Agora junta os produtos de todos os datafeeds
+
         produtos = datafeeds.flatMap((df) => df?.prod || []);
       }
 
