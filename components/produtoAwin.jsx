@@ -16,8 +16,8 @@ export default function ProdutoAwin(props) {
 
   } = props;
 
- // const caminho =  mybrand.toLowerCase().trim();
-  const linkUrl = `https://modakids.blendibox.com.br/${mybrand}/${produto['slug']}`;
+  const caminho =  mybrand.toLowerCase().trim();
+  const linkUrl = `https://modakids.blendibox.com.br/${caminho}/${produto['slug']}`;
 /*
 {"slug":"kit-6-pcs-edredom-casa-dona-dupla-face-casal-queen-com-lencol-bege-10630hdu44kpb1",
 "$":{"id":"40671926619","lang":""},
