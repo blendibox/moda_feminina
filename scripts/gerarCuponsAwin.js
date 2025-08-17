@@ -80,10 +80,12 @@ async function gerarVoucherJsonComSlugs() {
     const saidaJson = path.join(pastaSaida, `VOUCHER.json`);
     const saidaJsonl = path.join(pastaSaida, `VOUCHER.jsonl`);
 	const saidaJsonData = path.join(pastaSaidaData, `VOUCHER.json`);
+	const saidaJsonDatal = path.join(pastaSaidaData, `VOUCHER.jsonl`);
 
     fs.writeFileSync(saidaJson, jsonCompleto, 'utf-8');
     fs.writeFileSync(saidaJsonl, jsonl, 'utf-8');
 	fs.writeFileSync(saidaJsonData, jsonCompleto, 'utf-8');
+	fs.writeFileSync(saidaJsonDatal, jsonl, 'utf-8');
 
     console.log(`✅ Criados: ${saidaJson} , ${saidaJsonl} e ${saidaJsonData} `);
   }

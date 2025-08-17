@@ -45,8 +45,10 @@ next-env.d.ts
 /data/slugs
 /data/slugs-lotes
 data/DAFITI.xml
+data/CEA.xml
 /data/slugs-lotes
 /public/data
 public/categorias.json
 public/slug-index.json
+
 

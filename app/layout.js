@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-BR">
 		<head>
 		   <meta charSet="UTF-8" />
-		   <link rel="alternate" type="application/rss+xml" href="https://comprar.blendibox.com.br/googleMerchant_1.xml" />
+		   <link rel="alternate" type="application/rss+xml" href="https://modafeminina.blendibox.com.br/googleMerchant_1.xml" />
 		   <link rel="preload" fetchPriority="high" as="image" href="/images/banner.webp" type="image/webp"></link>	   
 		   <meta name="msvalidate.01" content="13BC51958165F779625DD28F673D5B4A"></meta>
 		   <meta name="verify-admitad" content="547987f230" ></meta>
@@ -35,10 +35,10 @@ export default function RootLayout({ children }) {
 				__html: JSON.stringify({
 				  "@context": "https://schema.org",
 				  "@type": "WebSite",
-				  "url": "https://comprar.blendibox.com.br/",
+				  "url": "https://modafeminina.blendibox.com.br/",
 				  "potentialAction": {
 					"@type": "SearchAction",
-					"target": "https://comprar.blendibox.com.br/busca?{search_term_string}",
+					"target": "https://modafeminina.blendibox.com.br/busca?{search_term_string}",
 					"query-input": "required name=search_term_string"
 				  }
 				})
