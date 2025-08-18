@@ -40,10 +40,10 @@ export default function ProdutoAwin(props) {
 		 <SchemaProduto
 		 suppressHydrationWarning
 		   title={produto['text']?.['name']}
-		   image={produto['alternateImageTwo'] || produto['awImage'] || produto['mImage']  } 
+		   image={produto['uri']?.['alternateImageTwo'] || produto['uri']?.['awImage'] || produto['uri']?.['mImage']  } 
 		   link ={linkUrl || '#'}
 		   brand={produto['brand']?.['brandName'] || mybrand} 
-		   priceGoogle= {produto['Price']}
+		   priceGoogle= {produto['price']?.['buynow']}
 		   />
 	
       <main id="content" role="main" className="justify-center">
