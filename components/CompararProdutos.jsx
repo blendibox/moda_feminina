@@ -138,7 +138,7 @@ export default function CompararProdutos() {
               _imagem: imagem,
 			  _linkAfilio: linkAfilio,
 			  _categoria : categoria,
-			  _linklocal:`https://comprar.blendibox.com.br/${link}?${marca}`,
+			  _linklocal:`https://modafeminina.blendibox.com.br/${link}?${marca}`,
 			  _cupom: cupom
             });
           }

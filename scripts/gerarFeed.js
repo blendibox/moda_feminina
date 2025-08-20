@@ -129,7 +129,7 @@ function gerarXML(produtos) {
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
 <channel>
   <title>Blendibox - Dicas de Compras online</title>
-  <link>https://comprar.blendibox.com.br</link>
+  <link>https://modafeminina.blendibox.com.br</link>
   <description>Produtos divulgados por Blendibox, disponíveis para venda online por lojas parceiras.</description>
   ${items}
 </channel>
